@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Array Methods
+        var arr =['anjali','tannu','vish','preet','pooja']
+        console.log(arr)
+
+        //toString method The JavaScript 
+        //method toString() converts an array to a string of (comma separated) array values.\
+       var arr2= arr.toString()
+        console.log(arr2)
+
+        //The join() method also joins all array elements into a string.
+        //It behaves just like toString(), but in addition you can specify the separator:
+
+        var arr3 =arr.join(' # ')
+        console.log(arr3)
+
+        //The pop() method removes the last element from an array:
+       var arr4 =arr.pop()
+        console.log(arr4) //its return only poped value e.g. pooja
+
+        console.log(arr) //its return arry ['anjali','tannu','vish','preet']
+
+        //The push() method adds a new element to an array (at the end):
+        var arr5 =arr.push('vv')
+        console.log(arr5)  //its return the new lenth of arr.
+
+        console.log(arr) //its return  ['anjali', 'tannu', 'vish', 'preet', 'vv']
+
+        //The shift() method removes the first array element and 
+        //"shifts" all other elements to a lower index.
+
+        var arr6 =arr.shift()
+        console.log(arr6) //its return The shift() method returns the value that was /
+        //"shifted out": eg. anjali
+
+        console.log(arr) //its return new arry ['tannu', 'vish', 'preet', 'vv']
+        var arr7 =arr.unshift("shanu") //The unshift() method adds a new element to an array
+                              // (at the beginning), and "unshifts" older elements:
+         console.log(arr7)   //The unshift() method returns the new array length. o/p=5
+         console.log(arr)  
+
+    </script>
+</body>
+</html>
